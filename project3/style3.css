@@ -1,0 +1,6 @@
+        table, th, td{
+            border: 6px solid blue;
+            border-collapse: collapse;
+            background-color: orange;
+            color: pink;
+            }
