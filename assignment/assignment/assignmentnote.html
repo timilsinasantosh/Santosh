@@ -1,0 +1,69 @@
+<!--- .................---> Comments made. 
+
+<!doctype html>
+<html>
+<style>
+    input[type=text],select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit]{
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover{
+        background-color: #45a049;
+    }
+   /* div{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    } */ <!--its better if you keep all above in CSS style--->
+</style>
+<body>
+<h3>Using CSS to style a HTML Form</h3><!----keep here form instead of using css...-->
+<div>
+    <form action="action_page.php">
+        <label for="fname">FirstName</label><!---if we try to link to table i dont think <label> will work.--->
+        <input type="text"id="fname"name="firstname">
+
+        <label for="lname">LastName</label><!--- using label has one advantage that is if you click in label it will tell user to write in box. just click in label in last name it will direct to box-->
+        <input type="text"id="lname"name="lastname"><!--you have to understand why for=lname and id=lname are same -->
+        <label for="state">State</label>
+        <select id="state"name="state"><!--- since Alabama is the first one dont you think we need to keep vacant or Select for the user when they see first time for selection of country-->
+            <td>Gender:-</td>
+            <input type="radio"name="gender"value="male">Male
+            <input type="radio"name="gender"value="female">Female
+            <input type="radio"name="gender"value="other">Other
+            <br>
+            <br>
+            <tr>
+                <td>ClassTaken :-</td>
+                <td>
+                    <br>
+                    <input type="checkbox"name="beginersjava"value="beginersjava">BeginarsJava
+                    <br>
+                    <input type="checkbox"name="advancejava"value="advancejava">AdvanceJava
+                    <br>
+                    <input type="checkbox"name="Csharp"value="Csharp">CSharp
+                    <br>
+                    <input type="checkbox"name"Ui"value="Ui">UI
+                </td>
+            </tr>
+        </form>
+        <input type="submit"value="Submit"><!----when they submit why doesnt it shows anything on url. where is the get method???-->
+    </form>
+</div>
+</body>
+</html>
